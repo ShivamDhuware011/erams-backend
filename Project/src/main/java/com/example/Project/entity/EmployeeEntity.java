@@ -42,22 +42,22 @@ public class EmployeeEntity {
 	@Column(nullable = false)
 	private LocalDate Date_of_Birth;
 	
-	@Column(nullable = false,unique = true)
+	@Column(nullable = false)
 	private int Contact_no;
 	
-	@Column(nullable = false,length = 100,unique = true)
+	@Column(nullable = false,length = 100)
 	private String E_mail;
 	
 	@Column(nullable = false,length = 255)
 	private String Address;
 	
-	@Column(nullable = false,length = 100,unique = true)
+	@Column(nullable = false,length = 100)
 	private String Password;
 	
 	@Column(nullable = false)
 	private LocalDate Date_of_Joining;
 	
-	@Column(nullable = false,unique = true)
+	@Column(nullable = false)
 	private String Emp_code;
 	
 	@Column

@@ -52,8 +52,8 @@ public class EmployeeController
 		  
 		
 	 }
-	 @PutMapping("/list/{Emp_id}")
-	 public EmployeeEntity updateEmpDetails(@RequestBody EmployeeEntity employeeentity,HttpServletRequest request)
+	 @PutMapping("/update/{Emp_id}")
+	 public EmployeeEntity updateEmpDetails(@RequestBody EmployeeEntity employeeentity,@PathVariable ("Emp_id") int Emp_id)
 {
 		 EmployeeEntity employeeById = employeeService.getEmpById(Emp_id);
 		 employeeentity.setFirst_name(employeeById.getFirst_name());

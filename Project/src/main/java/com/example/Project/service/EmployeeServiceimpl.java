@@ -61,7 +61,8 @@ public class EmployeeServiceimpl implements IEmployeeService {
 		public EmployeeEntity updateEmp(EmployeeEntity employeeentity)
 		{
 			employeeDao.findById(employeeentity.getEmp_id()).orElseThrow(() -> new ResourceNotFoundException("Invalid Emp ID!!!!!! : Can't Update details"));
-		return employeeDao.save(employeeentity);
+		System.out.println("update successfull");
+			return employeeDao.save(employeeentity);
 		}
 	
 
